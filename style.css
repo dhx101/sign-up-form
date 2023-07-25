@@ -6,6 +6,8 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
+    box-sizing: border-box;
 }
 
 :root{
@@ -76,7 +78,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 50px;
 }
 
@@ -127,4 +128,42 @@ label {
     display: flex;
     flex-direction: column;
     flex: 0 0 40%;
+    
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0 5vw;
+}
+
+.btn button:first-child{
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: #596D48;
+    color: white;
+}
+
+.btn button:last-child {
+    border: none;
+    background: none;
+}
+
+.btn button:last-child > strong {
+    color: #596D48;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+input:focus {
+    border:  1px solid blue;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
 }
