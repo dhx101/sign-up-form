@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -14,24 +17,44 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="text">
             <p>This is not a real online service! You know you need something like this in your life to help you realice your deepes dreams.<br>Sign up <em>now</em> yo get started</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <form action="#" method="post">
-            <fieldset>
-                <input type="text" name="first-name" id="first-name">
-                <input type="text" name="last-name" id="last-name">
-                <input type="email" name="email" id="email">
-                <input type="tel" name="tel" id="tel">
-                <input type="password" name="password" id="password">
-                <input type="password" name="confirm-password" id="confirm-password">
-            </fieldset>
-            <fieldset>
-                <button type="submit">Create account</button>
-                <button>Already have an account? <strong>Log in</strong></button>
-            </fieldset>
-        </form>
+        <div class="form">
+            <p>Let's do this!</p>
+            <form action="#" method="post" id="formulario">
+                <div class="inputs">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="inputs">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="inputs">
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div class="inputs">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="inputs">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </div>
+            </form>
+        </div>
+        <div class="btn">
+            <button type="submit" form="formulario">Create account</button>
+            <button>Already have an account? <strong>Log in</strong></button>
+        </div>
+        
     </main>
 </body>
 </html>
